@@ -1,0 +1,38 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>Archetype Created Web Application</display-name>
+
+	<filter>
+		<filter-name>AccessControlAllowOriginFilter</filter-name>
+		<filter-class>iii.org.tw.util.AccessControlAllowOriginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AccessControlAllowOriginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>JerseyJaxrsConfig</servlet-name>
+	  	<servlet-class>com.wordnik.swagger.jersey.config.JerseyJaxrsConfig</servlet-class>
+	  	<init-param>
+	    	<param-name>api.version</param-name>
+	    	<param-value>1.0.0</param-value>
+	  	</init-param>
+	  	<init-param>
+	    	<param-name>swagger.api.basepath</param-name>
+	    	<!-- <param-value>http://localhost:8081/SmartTourismApi/api/v1</param-value> -->
+	    	<param-value>http://140.92.88.63/http/140.92.2.219/8080/SmartTourismApi/api/v1</param-value>
+	  	</init-param>
+	  	<load-on-startup>2</load-on-startup>
+  	</servlet>
+<!--  	
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/SmartTourism</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+-->
+</web-app>
