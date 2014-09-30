@@ -22,8 +22,8 @@
 	  	</init-param>
 	  	<init-param>
 	    	<param-name>swagger.api.basepath</param-name>
-	    	<!-- <param-value>http://localhost:8081/SmartTourismApi/api/v1</param-value> -->
-	    	<param-value>http://140.92.88.63/http/140.92.2.219/8080/SmartTourismApi/api/v1</param-value>
+	    	<param-value>http://localhost:8081/SmartTourismApi/api/v1</param-value>
+	    	<!-- <param-value>http://140.92.88.63/http/140.92.2.219/8080/SmartTourismApi/api/v1</param-value> -->
 	  	</init-param>
 	  	<load-on-startup>2</load-on-startup>
   	</servlet>
